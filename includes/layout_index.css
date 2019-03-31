@@ -1,0 +1,300 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* header */
+
+.header {
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+
+.header li a {
+  display: block;
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+
+/* menu */
+
+.header .menu {
+    max-height: 0;
+    transition: max-height .2s ease-out;
+    margin-right: 171px;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: #6A6A6B;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #6A6A6B;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+.row .columnprofile {
+    margin-top: 85px;
+    padding-top: 118px;
+}
+.row.profilesecond .column {
+    margin-top: 100px;
+}
+
+/* 48em = 768px */
+
+@media (min-width: 48em) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 30px 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+}
+
+input[type=submit] {
+  display: inline-block;
+  border-radius: 26px;
+  background-color:  #ED5657;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 13px;
+  padding: 10px;
+  width: 80px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px
+}
+
+input[type=text], select {
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid #6A6A6B;
+  outline-offset: 5px;
+  width: 200px; /* Line width*/ 	
+  
+}
+
+/* footer */
+.footer-content-wrapper {
+  width: 60%;
+  margin: 1em auto;
+  display: block;
+  color: #6A6A6B;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: 'Poppins';
+  	
+}
+
+.footer-col {
+  display: inline-block;
+  padding: 0.5em 0.1em 0.5em 1em;
+  box-sizing: border-box;
+}
+
+.ta-l {
+  text-align: left;
+}
+.flt {
+  float: left;
+}
+
+.flt:nth-child(4):after {
+   content: " "; 
+   visibility: hidden; 
+   display: block; 
+   height: 1em; 
+   clear: both;
+}
+
+.large-25 {
+  width: 25%;
+}
+
+.footer-col a {
+  display: block;
+  margin: 0.3em 0;
+}
+
+@media (max-width: 550px) {
+  .small-50 {
+    width: 50%;  
+  }
+  .footer-col:nth-child(2) {
+    border: none;
+  }
+}
+
+@media (max-width: 300px) {
+  .tiny-100 {
+    width: 100%;
+  }
+  .footer-col { 
+    border: none;
+	text-align: center;  
+  }
+	
+}
+
+/* Desktop */
+@media only screen and (min-width: 1025px) {
+	.rowone {
+		width: 100%;
+		margin: 50px 10px 0px 10%;
+		padding: 50px 0px 0px 0px;
+		overflow: hidden;
+		
+	}
+	.columnone {
+		width: 50%;
+		height: auto;
+		float: left;
+		align-content: center;
+		
+		
+	}
+	.columntwo {
+		border-radius: 50%;
+		height: 500px;
+	}
+	.footerlogo {
+		padding-right: 10px;
+	}
+}
+
+/* Tablet */
+@media only screen and (min-width: 700px) and (max-width: 1024px) {
+	.rowone {
+		width: 100%;
+		height: auto;
+		margin: 50px 10px 0px 10%;
+		padding: 50px 0px 0px 0px;
+		overflow: hidden;
+		
+	}
+	.columnone {
+		width: 50%;
+		height: auto;
+		float: left;
+		align-content: center;
+		
+		
+	}
+	.columntwo {
+		border-radius: 50%;
+		height: 500px;
+	}
+	
+
+}
+
+/* Phone */
+@media only screen and (max-width: 699px) {
+	.columnone {
+		width: 50%;
+		height: auto;
+		float: left;
+		align-content: center;
+		padding: 50px;
+		
+		
+	}
+	.columntwo {
+		border-radius: 50%;
+		height: 500px;
+		align-content: center;
+		padding: 50px;
+	}
+	.subtext {
+		text-align: center;
+	}
+	.footerlogo {
+		text-align: center;
+	}
+	.fa {
+		text-align: center;
+	}
+}

@@ -1,0 +1,1170 @@
+@charset "utf-8";
+/* Combined CSS file for Certifi */
+/*-------------*/
+
+/*Used for all Media Queries */
+
+body  {
+  margin: 0;
+  font-family: 'Poppins'; 
+  color: #ADADAD;
+  font-weight: lighter;
+}
+
+p  {
+    font-family: 'Poppins';
+color: #ADADAD;
+	font-weight: lighter;
+}
+
+h1 {
+  	font-family: 'Poppins';
+  	color: #ED5657;
+	font-weight: lighter;
+}
+
+h2 {
+  	font-family: 'Poppins';
+  	color: #ED5657;
+	font-weight: lighter;
+}
+
+h3 { 
+           font-family: 'Poppins';
+            color: #747171;
+	font-weight: lighter;
+}
+
+
+.button {
+  display: inline-block;
+  border-radius: 26px;
+  background-color:  #ED5657;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 13px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button2 {
+  display: inline-block;
+  border-radius: 26px;
+  background-color:  #ed5657;
+  border: #ED5657;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 13px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button2 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.form {
+	width: 200px;
+            height: auto;
+            padding: 20px;
+            border: 1px solid;
+	border-radius: 28px;
+	font-family: 'Poppins'; 
+	color: #ADADAD;
+}
+
+.form2 {
+	width: 200px;
+            height: auto;
+            padding: 20px;
+	border-radius: 28px;
+	font-family: 'Poppins'; 
+	color: #ADADAD;
+}
+
+.fa {
+  padding: 8px;
+  font-size: 12px;
+  width: 15px;
+  text-align: center;
+  text-decoration: none;
+  margin: 2px 2px;
+  border-radius: 9px;
+}
+
+.fa-facebook {
+  background: #ED5657;
+  color: white;
+}
+
+
+.fa-linkedin {
+  background: #ED5657;
+  color: white;
+}
+
+input[type=submit] {
+  display: inline-block;
+  border-radius: 26px;
+  background-color:  #ED5657;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 13px;
+  padding: 10px;
+  width: 80px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px
+}
+
+input[type=text], select {
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid #ADADAD;
+  outline-offset: 5px;
+  width: 200px; /* Line width*/ 	
+  
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+
+  /* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+   
+/*------ Accordian Styles ---------*/
+.accordion {
+	background-color: #eee;
+	color: #747171;
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	text-align: left;
+	border: none;
+	outline: none;
+	transition: 0.4s;
+	font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .accordion:hover {
+	background-color: #ccc;
+  }
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+	padding: 0 18px;
+	background-color: white;
+	display: none;
+	overflow: hidden;
+	font-family: 'Poppins', sans-serif;
+	font-weight: lighter;
+  }
+
+/* Icons to be displayed based on active/inactive. 
+		Find a unicode you like or finagle a css background img or something.  */
+  .accordion:after {
+	content: '\02795'; /* Unicode character for "plus" sign (+) */
+	font-size: 13px;
+	color: #777;
+	float: right;
+	margin-left: 5px;
+	font-family: 'Poppins', sans-serif;
+  }
+  
+  .active:after {
+	content: "\2796"; /* Unicode character for "minus" sign (-) */
+	font-family: 'Poppins', sans-serif;
+  }
+
+  .expire {
+	  font-family: 'Poppins', sans-serif; 
+  }
+.upd_ticketBtn{
+  display: inline-block;
+  border-radius: 26px;
+  background-color:  #ED5657;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 13px;
+  padding: 15px;
+  width: 110px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+	
+}
+.del_ticketBtn{
+  display: inline-block;
+  border-radius: 26px;
+  background-color:  #ED5657;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 13px;
+  padding: 15px;
+  width: 110px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+	
+}
+
+  #login-modal {
+      display: none;
+  }
+  
+  #register-modal {
+      display: none;	
+  }
+
+  #updProfileModal {
+	display: none;
+}
+
+#updProfileForm {
+	display: none;
+}
+
+/* ---------------- Insert Ticket Modal Styles ------------------- */
+#ins_ticketModal {
+	display: none;
+}
+
+#ins_step1 {
+	display: none;
+}
+
+#ins_step2 {
+	display: none;
+}
+
+/* --------------- Update Ticket Modal Styles ----------------------- */
+#upd_step1 {
+	display: none;
+}
+
+#upd_step2 {
+	display: none;
+}
+
+#upd_ticketModal {
+	display: none;
+}
+
+#profileModal {
+	display: none;
+	}
+#profileForm {
+	display: none;
+}
+
+.hidden {
+	display: none;
+}
+
+#downwardDog {
+	display: none;
+}
+
+.list {
+	font-family: 'Poppins';
+	font-weight: 200;
+	font-size: 1em;
+	list-style-type: none;
+ 	margin: 0;
+  	padding: 0;	
+	color:#ADADAD;
+}
+
+/* Profile Header */
+/* Hunter's Styles */
+
+.header {
+	width: 100%;
+	background-color: #ED5657;
+	padding: 10px 0px;
+	float: left;
+}
+
+.logoContainer {
+	float: left;
+	height: 45px;
+	margin: 10px 0px 0px 10%;
+}
+
+.logo {
+	width: 150px;
+}
+
+.NavIconsContainer {
+	float: right;
+	margin: 0px 10% 0px 0px;
+}
+
+.NavIcons {
+	list-style: none;;
+	display: inline;
+	width: 50px;
+}
+
+.IconLeft {
+	width: 45px;
+	padding: 0px 30px 0px 0px;
+}
+
+.IconMiddle {
+	width: 45px;
+}
+
+.IconRight {
+	width: 45px;
+	padding: 0px 0px 0px 30px
+}
+
+/* End of header --- */
+.add{
+    text-align: center;
+    padding-top: 2em;
+}
+
+
+/* Footer */
+footer {
+	background-color: #ED5657;
+	float: left;
+	margin: 50px 0px 0px 0px;
+}
+
+	.FooterContainer {
+		text-align: center;
+}
+
+.NavIcons {
+	text-align: center;
+	list-style: none;;
+	display: inline;
+	width: 50px;
+}
+	
+.socialmedia {
+	width: 50px;
+}
+
+.footer {
+	font-family: 'Poppins';
+	font-weight: 200;
+	display: inline;
+}
+
+/*  End of footer --- */
+/* End of Hunter's Styles */
+
+.column {float: left;
+    width: 50%;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-bottom: 15px;
+    height: auto;
+}
+
+/* Desktop */
+@media only screen and (min-width: 1025px) {
+
+	
+/*Profile CSS */
+/* Hunter's Styles */
+	
+	.hamburger {
+		display: none;
+	}
+	
+	.profilePic {
+		width: 50%;
+		float: left;
+		align-content: center;
+	}
+	
+	.img {
+		border-radius: 50%;
+		width: 400px;
+		
+	}	
+	.profileinfo {
+		width: 80%;
+		margin: 50px 10% 0px 10%;
+		padding: 50px 0px 0px 0px;
+		overflow: hidden;
+	}
+	
+	.PersonalInfo {
+		width: 80%;
+		margin: 50px 10% 0px 10%;
+		overflow: hidden;
+	}
+	
+	.side {
+		width: 50%;
+		float: left;
+	}
+	
+
+	.bio {
+		width: 50%;
+		float: left;
+	}
+
+	.info {
+		width: 100%;
+	}
+	
+	.moreinfo {
+		width: 100%;
+		float: left;
+	}
+	
+	.button1 {
+		display: inline-block;
+  		border-radius: 26px;
+ 		background-color:  #ED5657;
+  		border: none;
+  		color: #FFFFFF;
+  		text-align: center;
+   		font-size: 13px;
+  		padding: 20px;
+  		width: 150px;
+  		transition: all 0.5s;
+  		cursor: pointer;
+  		margin: 5em;
+}
+
+	.button2 {
+		display: inline-block;
+  		border-radius: 26px;
+ 		background-color:  #ED5657;
+  		border: none;
+  		color: #FFFFFF;
+  		text-align: center;
+   		font-size: 13px;
+  		padding: 20px;
+  		width: 150px;
+  		transition: all 0.5s;
+  		cursor: pointer;
+  		margin: 5em;
+	}
+	.buttons {
+		text-align: center;
+	}
+/* End of hunter's styles --- */
+	
+	
+}
+
+/* Tablet */
+@media only screen and (min-width: 700px) and (max-width: 1024px) {
+ 
+	/*Profile CSS */
+	/* Hunter's Styles */
+	.hamburger {
+		display: none;
+	}
+	
+	.profilePic {
+		width: 50%;
+		float: left;
+		align-content: center;
+	}
+	
+	.img {
+		border-radius: 50%;
+		width: 90%;
+		
+	}	
+	.profileinfo {
+		width: 80%;
+		margin: 0px 10% 0px 10%;
+		padding: 50px 0px 0px 0px;
+		overflow: hidden;
+	}
+	
+	.PersonalInfo {
+		width: 80%;
+		margin: 50px 10% 0px 10%;
+		overflow: hidden;
+	}
+
+	.side {
+		width: 50%;
+		float: left;
+	}
+	
+	.bio {
+		width: 50%;
+		float: left;
+	}
+
+	.info {
+		width: 100%;
+	}
+	
+	.moreinfo {
+		width: 100%;
+		float: left;
+	}
+	
+	.button1 {
+		display: inline-block;
+  		border-radius: 26px;
+ 		background-color:  #ED5657;
+  		border: none;
+  		color: #FFFFFF;
+  		text-align: center;
+   		font-size: 13px;
+  		padding: 20px;
+  		width: 150px;
+  		transition: all 0.5s;
+  		cursor: pointer;
+  		margin: 5em;
+}
+}
+
+	.button2 {
+		display: inline-block;
+  		border-radius: 26px;
+ 		background-color:  #ED5657;
+  		border: none;
+  		color: #FFFFFF;
+  		text-align: center;
+   		font-size: 13px;
+  		padding: 20px;
+  		width: 150px;
+  		transition: all 0.5s;
+  		cursor: pointer;
+  		margin: 5em;
+}
+	
+	.buttons {
+		text-align: center;
+	}
+	
+	.list {
+	font-family: 'Poppins';
+	font-weight: 200;
+	font-size: 1em;
+	list-style-type: none;
+ 	margin: 0;	
+}
+	.PersonalInfo {
+		margin: 0px 10%;
+	}
+	
+	.AboutUs {
+		white-space:nowrap;
+		padding: 20px 0px 0px 0px;
+	}
+	/* --- */
+/* End of Hunter's Styles */
+
+}
+
+/* Phone */
+@media only screen and (max-width: 699px) {
+	
+	/*Profile CSS */
+	/* Hunter's Styles */
+	.hamburger {
+		width: 55px;
+		margin: -10px 0px 0px 0px;
+		float: right;
+	}
+	
+	.IconLeft {
+		display: none;
+	}
+	.IconMiddle {
+		display: none;
+	}
+	.IconRight {
+		display: none;
+	}
+	
+	.img {
+		border-radius: 50%;
+		width: 100%;
+	}	
+	
+	.profilePic {
+		width: 100%;
+		align-content: center;
+		margin: 50px 0px 0px 0px;
+	}
+	
+	.profileinfo {
+		width: 80%;
+		margin: 50px 10% 0px 10%;
+		overflow: hidden;
+	}
+
+	.bio {
+		width: 100%;
+		float: left;	
+	}
+
+	.button1 {
+		display: inline-block;
+  		border-radius: 26px;
+ 		background-color:  #ED5657;
+  		border: none;
+  		color: #FFFFFF;
+  		text-align: center;
+   		font-size: 13px;
+  		padding: 20px;
+  		width: 150px;
+  		transition: all 0.5s;
+  		cursor: pointer;
+  		margin: 5em;
+}
+
+
+	.button2 {
+		display: inline-block;
+  		border-radius: 26px;
+ 		background-color:  #ED5657;
+  		border: none;
+  		color: #FFFFFF;
+  		text-align: center;
+   		font-size: 13px;
+  		padding: 20px;
+  		width: 150px;
+  		transition: all 0.5s;
+  		cursor: pointer;
+  		margin: 5em;
+}
+	
+	
+	.buttons {
+		text-align: center;
+	}
+	
+	.list {
+		font-family: 'Poppins';
+		font-weight: 200;
+		font-size: 1em;
+		list-style-type: none;
+		margin: 0;	
+	}
+	.PersonalInfo {
+		margin: 0px 10%;
+	}
+	
+	.AboutUs {
+		white-space:nowrap;
+		padding: 20px 0px 0px 0px;
+	}
+	/* --- */
+	/* End of Hunter's Styles */
+}
+
+@charset "utf-8";
+/* CSS for profile.php */
+
+h2 {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 800;
+	color: #ED5657;
+	font-size: 1.8em;
+	margin: 0px;
+}
+
+h3 {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+	font-size: 1.3em;
+	margin: 0px;
+}
+
+h4 {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+	font-size: 1em;
+	margin-bottom: 0px;
+}
+
+.list {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 200;
+	font-size: 1em;
+	list-style-type: none;
+ 	margin: 0;
+  	padding: 0;	
+}
+
+p {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 200;
+	font-size: 0.9em;	
+}
+
+
+/* header */
+.header {
+	width: 100%;
+	background-color: #ED5657;
+	padding: 10px 0px;
+	float: left;
+}
+
+.logoContainer {
+	float: left;
+	height: 45px;
+	margin: 10px 0px 0px 10%;
+}
+
+.logo {
+	width: 150px;
+}
+
+.NavIconsContainer {
+	float: right;
+	margin: 0px 10% 0px 0px;
+}
+
+.NavIcons {
+	list-style: none;;
+	display: inline;
+	width: 50px;
+}
+
+.IconLeft {
+	width: 45px;
+	padding: 0px 30px 0px 0px;
+}
+
+.IconMiddle {
+	width: 45px;
+}
+
+.IconRight {
+	width: 45px;
+	padding: 0px 0px 0px 30px
+}
+
+/* --- */
+
+/* Footer */
+footer {
+	background-color: #ED5657;
+	float: left;
+	margin: 50px 0px 0px 0px;
+}
+
+	.FooterContainer {
+		text-align: center;
+}
+
+.NavIcons {
+	text-align: center;
+	list-style: none;;
+	display: inline;
+	width: 50px;
+}
+	
+.socialmedia {
+	width: 50px;
+}
+
+.footer {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 200;
+	display: inline;
+}
+
+/* --- */
+
+/* --------------*/
+/* --------------*/
+/* Drop Down Nav */
+/* --------------*/
+/* --------------*/	
+	.settingsIcon {
+		width: 50px;
+	}	
+	
+.dropbtn {
+  background-color: #ED5657;
+  border: none;
+  width: 45px;
+  padding: 0px 0px 0px 30px;
+ 
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+	font-size: 1.3em;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+/* --------------*/
+/* --------------*/
+/* End of Drop Down Nav */
+/* --------------*/
+/* --------------*/	
+
+/* Desktop */
+@media only screen and (min-width: 1025px) {
+
+	.hamburger {
+		display: none;
+	}
+	
+	
+	
+	.profilePic {
+		width: 50%;
+		float: left;
+		align-content: center;
+	}
+	
+	.img {
+		border-radius: 50%;
+		width: 400px;
+		
+	}	
+	.profileinfo {
+		width: 80%;
+		margin: 50px 10% 0px 10%;
+		padding: 50px 0px 0px 0px;
+		overflow: hidden;
+	}
+	
+	.PersonalInfo {
+		width: 80%;
+		margin: 50px 10% 0px 10%;
+		overflow: hidden;
+	}
+	
+	.side {
+		width: 50%;
+		float: left;
+	}
+	
+
+	.bio {
+		width: 50%;
+		float: left;
+	}
+
+	.info {
+		width: 100%;
+	}
+	
+	.moreinfo {
+		width: 100%;
+		float: left;
+	}
+	
+	.button1 {
+		border-radius: 20px;
+		color: white;
+		background-color: #fe3c46;
+		padding: 15px 0px;
+		width: 160px;
+		border: none;
+		font-family: 'Poppins', sans-serif;
+		font-weight: 600;
+		margin: 0px 0px 10px 0px;
+}
+
+	.button2 {
+		border-radius: 20px;
+		color: #fe3c46;
+		background: white;
+		padding: 10px 0px;
+		width: 160px;
+		border-color: #fe3c46;
+		border-width: 5px;
+		font-family: 'Poppins', sans-serif;
+		font-weight: 600;
+		margin: 10px 0px 0px 0px;
+	}
+	.buttons {
+		text-align: center;
+	}
+	
+}
+
+/* Tablet */
+@media only screen and (min-width: 700px) and (max-width: 1024px) {
+
+	.hamburger {
+		display: none;
+	}
+	
+	.profilePic {
+		width: 50%;
+		float: left;
+		align-content: center;
+	}
+	
+	.img {
+		border-radius: 50%;
+		width: 90%;
+		
+	}	
+	.profileinfo {
+		width: 80%;
+		margin: 0px 10% 0px 10%;
+		padding: 50px 0px 0px 0px;
+		overflow: hidden;
+	}
+	
+	.PersonalInfo {
+		width: 80%;
+		margin: 50px 10% 0px 10%;
+		overflow: hidden;
+	}
+
+	.side {
+		width: 50%;
+		float: left;
+	}
+	
+	.bio {
+		width: 50%;
+		float: left;
+	}
+
+	.info {
+		width: 100%;
+	}
+	
+	.moreinfo {
+		width: 100%;
+		float: left;
+	}
+	
+	.button1 {
+		border-radius: 20px;
+		color: white;
+		background-color: #fe3c46;
+		padding: 15px 0px;
+		width: 160px;
+		border: none;
+		font-family: 'Poppins', sans-serif;
+		font-weight: 600;
+		margin: 0px 0px 10px 0px;
+}
+
+	.button2 {
+		border-radius: 20px;
+		color: #fe3c46;
+		background: white;
+		padding: 10px 0px;
+		width: 160px;
+		border-color: #fe3c46;
+		border-width: 5px;
+		font-family: 'Poppins', sans-serif;
+		font-weight: 600;
+		margin: 10px 0px 0px 0px;
+	}
+	.buttons {
+		text-align: center;
+	}
+	
+	.list {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 200;
+	font-size: 1em;
+	list-style-type: none;
+ 	margin: 0;	
+}
+	.PersonalInfo {
+		margin: 0px 10%;
+	}
+	
+	.AboutUs {
+		white-space:nowrap;
+		padding: 20px 0px 0px 0px;
+	}
+	
+}
+
+/* Phone */
+@media only screen and (max-width: 699px) {
+	
+	
+/* --------------*/
+/* --------------*/
+/* Drop Down Nav */
+/* --------------*/
+/* --------------*/	
+	.dropdown {
+		display: none;
+	}
+	
+	.dropbtn {
+		display: none;
+	}
+/* --------------*/
+/* --------------*/
+/* Drop Down Nav */
+/* --------------*/
+/* --------------*/		
+	
+	.hamburger {
+		width: 55px;
+		margin: -10px 0px 0px 0px;
+		float: right;
+	}
+	
+	.IconLeft {
+		display: none;
+	}
+	.IconMiddle {
+		display: none;
+	}
+	.IconRight {
+		display: none;
+	}
+	
+	.img {
+		border-radius: 50%;
+		width: 100%;
+	}	
+	
+	.profilePic {
+		width: 100%;
+		align-content: center;
+		margin: 50px 0px 0px 0px;
+	}
+	
+	.profileinfo {
+		width: 80%;
+		margin: 50px 10% 0px 10%;
+		overflow: hidden;
+	}
+
+	.bio {
+		width: 100%;
+		float: left;	
+	}
+
+	.button1 {
+		border-radius: 20px;
+		color: white;
+		background-color: #fe3c46;
+		padding: 15px 0px;
+		width: 160px;
+		border: none;
+		font-family: 'Poppins', sans-serif;
+		font-weight: 600;
+		margin: 0px 0px 10px 0px;
+}
+
+	.button2 {
+		border-radius: 20px;
+		color: #fe3c46;
+		background: white;
+		padding: 10px 0px;
+		width: 160px;
+		border-color: #fe3c46;
+		border-width: 5px;
+		font-family: 'Poppins', sans-serif;
+		font-weight: 600;
+		margin: 10px 0px 0px 0px;
+	}
+	
+	.buttons {
+		text-align: center;
+	}
+	
+	.list {
+		font-family: 'Poppins', sans-serif;
+		font-weight: 200;
+		font-size: 1em;
+		list-style-type: none;
+		margin: 0;	
+	}
+	.PersonalInfo {
+		margin: 0px 10%;
+	}
+	
+	.AboutUs {
+		white-space:nowrap;
+		padding: 20px 0px 0px 0px;
+	}
+}

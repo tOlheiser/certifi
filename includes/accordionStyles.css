@@ -1,0 +1,137 @@
+/*------ Accordian Styles ---------*/
+.accordion {
+  background-color: #fafafa; /* eee */
+  border: 2px solid #eee;
+  border-radius: 0.5em;
+	color: #747171;
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	text-align: left;
+	outline: none;
+	transition: 0.4s;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 1em;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .accordion:hover {
+  background-color: #fff;
+  border: 2px solid #ED5657;
+  }
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+	padding: 0 18px;
+	background-color: white;
+	display: none;
+	overflow: hidden;
+	font-family: 'Poppins', sans-serif;
+	font-weight: lighter;
+  }
+
+/* Icons to be displayed based on active/inactive. 
+		Find a unicode you like or finagle a css background img or something.  */
+  .accordion:after {
+	content: '\02795'; /* Unicode character for "plus" sign (+) */
+	font-size: 13px;
+	color: #777;
+	float: right;
+	margin-left: 5px;
+	font-family: 'Poppins', sans-serif;
+  }
+  
+  .active:after {
+	content: "\2796"; /* Unicode character for "minus" sign (-) */
+	font-family: 'Poppins', sans-serif;
+  }
+
+  .expire {
+	  font-family: 'Poppins', sans-serif; 
+  }
+.upd_ticketBtn{
+  display: inline-block;
+  border-radius: 26px;
+  background-color:  #ED5657;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 13px;
+  padding: 15px;
+  width: 110px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+	
+}
+.del_ticketBtn{
+  display: inline-block;
+  border-radius: 26px;
+  background-color:  #ED5657;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 13px;
+  padding: 15px;
+  width: 110px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+	
+}
+
+.body {
+ 	font-family: 'Poppins', sans-serif; 
+ 	color: #ADADAD;
+ 	font-weight: lighter;
+}
+
+p {
+    font-family: 'Poppins';
+    color: #ADADAD;
+	font-weight: normal;
+	color: #747171;
+}
+
+em {
+	font-family: 'Poppins';
+    color: #ADADAD;
+	font-weight: lighter;
+	
+}
+
+.accordionContainer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.flexCenter {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.flexChild {
+  margin-top: 2em;
+}
+
+/* Media Query for tablet & desktop */
+
+@media (min-width:601px)  {
+  .flexCenter {
+    width: 70%;
+  }
+}
+
+@media (min-width:801px)  {
+  .flexCenter {
+    width: 60%;
+  }
+}
+
+@media (min-width:1281px)  {
+  .flexCenter {
+    width: 50%;
+  }
+}
